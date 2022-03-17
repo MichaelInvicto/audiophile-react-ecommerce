@@ -1,0 +1,151 @@
+.hero-section {
+    padding: 0rem 2rem;
+    max-width: 100%;
+    background-color: #000;
+}
+.hero-container {
+    flex-direction: row;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 39.5625rem;
+    padding: 0rem;
+    background-image: none;
+    margin: var(--center-container);
+    max-width: var(--max-container);
+    display: flex;
+}
+.hero-text {
+    flex: 1 1 0%;
+    text-align: left;
+}
+.hero-text-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.625rem;
+    font-size: 0.875rem;
+    color: hsl(0,0%,95%);
+}
+.hero-text-product-name {
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    margin: 1.3125rem 0rem 2.0625rem;
+    max-width: 24.75rem;
+    text-transform: uppercase;
+    color: hsl(0,0%,100%);
+}
+.hero-text-description {
+    color: hsl(0,0%,95%);
+    margin: 0rem 0rem 2.5rem;
+    max-width: 23rem;
+    font-size: 0.9375rem;
+}
+button {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    border: 0;
+}
+button a {
+    cursor: pointer;
+    background-color: var(--color-pry-100);
+    color: var(--color-sec-200);
+    min-height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+button a:hover {
+    border: 1px solid var(--color-pry-100);
+    background-color: transparent;
+}
+.hero-image {
+    min-height: 40rem;
+    width: 555px;
+    display: flex;
+    background-image: url("../../assets/home/desktop/headphone-hero-image.png");
+    background-repeat: no-repeat;
+    background-position: 0rem 3rem;
+}
+
+/* Tablet View */
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+    .hero-section, .hero-text {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .hero-container {
+        background: url('../../assets/home/tablet/image-header.jpg');
+        background-position: 0rem center;
+        min-height: 40rem;
+        margin: var(--center-container);
+        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: center;
+        justify-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: var(--max-container);
+        box-sizing: border-box;
+    }
+    .hero-image {
+        display: none;
+    }
+    .hero-text {
+        text-align: center;
+        flex: none;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .hero-section, .hero-text {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .hero-container {
+        background: url('../../assets/home/mobile/image-header.jpg');
+        min-height: 40rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: center;
+        justify-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: var(--max-container);
+        box-sizing: border-box;
+    }
+    .hero-image {
+        display: none;
+    }
+    .hero-text {
+        text-align: center;
+        flex: none;
+    }
+    .hero-text-product-name {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.080625rem;
+    }
+}

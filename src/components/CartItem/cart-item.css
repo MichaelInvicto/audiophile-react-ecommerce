@@ -1,0 +1,116 @@
+.main-style {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-item {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+  }
+  .cart-item-image {
+    position: relative;
+  object-fit: contain;
+  height: 4rem;
+  max-width: 4rem;
+  border-radius: var(--border-radius);
+  flex: 1 1 0%;
+  }
+  .cart-item-image-container {
+    display: block;
+  overflow: hidden;
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  }
+  .cart-item-image-container img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: medium none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+  }
+  .cart-item-body {
+    padding-left: 1rem;
+    flex: 1 1 0%;
+  }
+  .cart-item-body h4 {
+    text-transform: uppercase;
+    font-size: 0.8375rem;
+    line-height: 1.5625rem;
+    margin: 0;
+  }
+  .cart-item-body p {
+    font-size: 0.8rem;
+    line-height: 1.5625rem;
+    font-weight: var(--font-weight-400);
+    color: var(--color-sec-700);
+    letter-spacing: 0.05rem;
+    margin: 0;
+  }
+  .cart-item-buttons {
+    display: flex;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+  }
+  .cart-item-buttons form {
+    display: flex;
+  }
+  .cart-item-buttons-container {
+    max-width: 7.5rem;
+    min-height: 3rem;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    width: 7rem;
+    height: 2rem;
+    background-color: transparent;
+  }
+  .decrement-cart-item button, .increment-cart-item button {
+    border: medium none;
+    background-color: var(--color-sec-500);
+    font-weight: var(--font-weight-400);
+    cursor: pointer;
+    transition: var(--transition);
+    width: 2rem;
+    height: 2rem;
+    font-size: 20px;
+  }
+  .decrement-cart-item button:hover, .increment-cart-item button:hover {
+    color: var(--color-sec-100);
+  }
+  .cart-item-quantity input {
+    width: 2rem;
+    height: 2rem;
+    border: medium none;
+    background-color: var(--color-sec-500);
+    appearance: textfield;
+    outline: none;
+    text-align: center;
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-pry-100);
+  }
+
+  .x-section p {
+    font-weight: bold;
+  }

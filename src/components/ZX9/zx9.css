@@ -1,0 +1,160 @@
+.zx9-section {
+    max-width: 100%;
+    padding: 1rem 2rem;   
+}
+.zx9-container {
+    background-size: 60rem;
+    background-position: -13rem -1rem;
+    flex-direction: row;
+    min-height: 35rem;
+    background-color: var(--color-pry-100);
+    max-width: var(--max-container);
+    margin: var(--center-container);
+    margin-top: 9rem;
+    display: flex;
+    border-radius: var(--border-radius);
+    background-image: url("../../assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+}
+.zx9-image-container {
+    transform: scale(165%);
+    position: relative;
+}
+.zx9-container img {
+    position: absolute;
+    left: -55px;
+    top: 64px;
+    clip: rect(0, 331px, 276px, 0);
+}
+.zx9-description {
+    -moz-box-pack: center;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    color: var(--color-sec-200);
+    position: relative;
+
+}
+.zx9-description-body {
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 660px;
+    top: 130px;
+    width: 21.8rem;
+}
+.zx9-description-body h2 {
+    max-width: 15rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+.zx9-description-body p {
+    max-width: 21.8125rem;
+    margin: 2rem 0rem;
+}
+.zx9-speaker-link a {
+    cursor: pointer;
+    color: var(--color-sec-200);
+    min-height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    transition: var(--transition);
+    background-color: var(--color-sec-300);
+}
+.zx9-speaker-link a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+    .zx9-container {
+        min-height: 45rem;
+        flex-direction: column;
+        background-size: 35rem;
+        background-position: center -7rem;
+        position: relative;
+    }
+    .zx9-image-section {
+        position: relative;
+        top: 10%;
+        left: 25%;
+    }
+    .zx9-image-container {
+        transform: scale(100%);
+
+    }
+    .zx9-description {
+        text-align: center;
+        -moz-box-pack: start;
+        justify-content: flex-start;
+        color: var(--color-sec-200);
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
+        -moz-box-align: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: -62%;
+    }
+    .zx9-description-body h2, .zx9-description-body p {
+        max-width: none;
+    }
+    .zx9-speaker-link {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .zx9-container {
+        min-height: 45rem;
+        flex-direction: column;
+        background-size: 35rem;
+        background-position: center -7rem;
+        margin-top: 0;
+    }
+    .zx9-container img {
+        margin-left: -4rem;
+        position: static;
+    }
+    .zx9-image-container {
+        transform: scale(80%);
+        position: static;
+    }
+    .zx9-description {
+        text-align: center;
+        -moz-box-pack: start;
+        justify-content: flex-start;
+        color: var(--color-sec-200);
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
+        -moz-box-align: center;
+        align-items: center;
+        position: static;
+    }
+    .zx9-description-body {
+        position: static;
+        align-items: center;
+    }
+    .zx9-description-body h2 {
+        font-size: 2.25rem;
+line-height: 2.5rem;
+letter-spacing: 0.1rem;
+max-width: 12rem;
+    }
+    .zx9-description-body p {
+        margin: 1rem;
+    }
+
+}

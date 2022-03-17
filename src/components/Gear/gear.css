@@ -1,0 +1,121 @@
+.gear-section {
+    min-height: 60rem;
+    padding: 1rem 2rem;
+    max-width: 100%;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+.gear-container {
+    flex-direction: row;
+    min-height: 36.75rem;
+    width: var(--max-container);
+    margin: var(--center-container);
+    display: flex;
+}
+.gear-description {
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+    display: flex;
+    padding-top: 3rem;
+    flex: 1 1 0%;
+}
+.gear-text {
+    max-width: 27rem;
+    text-align: left;
+}
+.gear-text h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    max-width: 35.25rem;
+    margin: 0rem auto 2rem;
+    text-transform: uppercase;
+}
+.gear-text h2 span {
+    color: var(--color-pry-100);
+}
+.gear-text p {
+    max-width: 35.25rem;
+}
+.gear-image {
+    min-height: 18.75rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    flex: 1 1 0%;
+}
+.gear-image-tablet, .gear-image-mobile {
+    display: none !important;
+}
+.gear-image-container {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.gear-image-container img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: medium none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+    .gear-container {
+        flex-direction: column-reverse;
+    }
+    .gear-description {
+        justify-content: center;
+        text-align: center;
+    }
+    .gear-text {
+        max-width: none;
+        text-align: center;
+    }
+    .gear-image-desktop, .gear-image-mobile {
+        display: none;
+    }
+    .gear-image-tablet {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .gear-section {
+        padding: 0.75rem 1rem;
+    }
+    .gear-container {
+        flex-direction: column-reverse;
+    }
+    .gear-description {
+        justify-content: center;
+        text-align: center;
+    }
+    .gear-text {
+        max-width: none;
+        text-align: center;
+    }
+    .gear-image-desktop, .gear-image-tablet {
+        display: none;
+    }
+    .gear-image-mobile {
+        display: block;
+    }
+}

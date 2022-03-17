@@ -1,0 +1,98 @@
+.checkout-main {
+    min-height: 100vh;
+    background-color: var(--color-pry-500);
+    margin-bottom: -2rem;
+}
+.checkout-section {
+    margin: 0rem;
+    position: relative;
+    max-width: 100%;
+    z-index: 0;
+    padding: 7rem 2rem 3rem 0rem;
+}
+.checkout-section-container {
+    padding: 2rem 1rem;
+    grid-template-columns: 66% 34%;
+    max-width: var(--max-container);
+    margin: var(--center-container);
+    min-height: 10rem;
+    display: grid;
+    box-sizing: border-box;
+    gap: 1.875rem;
+}
+.checkout-form-section {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--color-sec-200);
+}
+.checkout-form-section * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.checkout-form-section form {
+    padding: 0rem 2.9rem;
+    margin-bottom: 3rem;
+background-color: var(--color-sec-200);
+max-width: 100%;
+}
+.checkout-cart-summary {
+    background-color: transparent;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+.checkout-header {
+    font-size: 2rem;
+    margin: 2rem 0rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 3.625rem;
+}
+.billing-details-form h3, .shipping-info-form h3 {
+    margin: 2rem 0rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    color: var(--color-pry-100);
+}
+.billing-details-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+    .checkout-section {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .checkout-section-container {
+        grid-template-columns: 100%;
+    }
+    .checkout-form-section {
+        padding: 0rem 1.5rem;
+    }
+    .checkout-form-section form {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .checkout-section {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .checkout-section-container {
+        grid-template-columns: 100%;
+    }
+    .checkout-form-section {
+        padding: 0rem 1.5rem;
+    }
+    .checkout-form-section form {
+        padding: 0;
+    }
+}

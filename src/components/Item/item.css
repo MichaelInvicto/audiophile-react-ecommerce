@@ -1,0 +1,101 @@
+.item {
+    background-color: var(--color-sec-600);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 22rem;
+    height: 12rem;
+}
+.item:hover .item-image-container {
+    top: -150px;
+}
+.item-image {
+    width: 100%;
+    position: relative;
+}
+.item-image-container {
+    width: 100%;
+    position: absolute;
+    left: 52px;
+    top: -130px;
+    transition: var(--transition);
+}
+.item-image-container img {
+    width: 76%;
+}
+.item-shadow {
+    width: 160px;
+    height: 72px;
+}
+.shadow-container {
+    width: 100%;
+}
+.item-shadow img {
+    width: 100%;
+}
+.item-name {
+    color: #000 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5rem !important;
+    letter-spacing: 0.1rem !important;
+    text-transform: uppercase;
+}
+.item-link a {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.1rem;
+    -moz-box-align: center;
+    align-items: center;
+    transition: var(--transition);
+    font-weight: 600;
+}
+.item-link a span {
+    color: var(--color-pry-100);
+}
+.item:hover a {
+    color: var(--color-pry-100);
+}
+
+@media only screen and (min-width: 786px) and (max-width: 1050px) {
+    .item {
+        margin: auto;
+        height: 10.3125rem;
+        max-width: 15rem;
+        display: flex;
+        flex-direction: column;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: end;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .item-image-container {
+        top: -8rem;
+        left: 0;
+    }
+    .item-image-container img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 787px) {
+    .item {
+        width: 19.7rem;
+        height: 15rem;
+        margin-bottom: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-image-container {
+        left: 0rem;
+        top: -6.8rem;
+        text-align: center;
+    }
+}

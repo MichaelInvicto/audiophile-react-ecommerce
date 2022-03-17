@@ -1,0 +1,60 @@
+.zx7-speaker-section {
+    padding: 1rem 2rem;
+    max-width: 100%;
+}
+.zx7-container {
+    background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+    min-height: 20rem;
+    max-width: var(--max-container);
+    margin: var(--center-container);
+    border-radius: var(--border-radius);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+.zx7-heading {
+    margin-left: 5.875rem !important;
+    margin: 0rem 1.5rem;
+}
+.zx7-heading h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.zx7-link a {
+    cursor: pointer;
+    min-height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    transition: var(--transition);
+    background-color: transparent;
+    border: 0.1rem solid var(--color-sec-300);
+    color: var(--color-sec-300);
+}
+.zx7-link a:hover {
+    background-color: #000;
+    color: #fff;
+}
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+    .zx7-container {
+        background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .zx7-container {
+        background-image: url("../../assets/home/mobile/image-speaker-zx7.jpg");
+    }
+    .zx7-heading {
+        margin: 0rem 1.5rem !important;
+    }
+}

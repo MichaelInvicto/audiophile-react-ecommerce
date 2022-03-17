@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/5.15.4/css/font-awesome.min.css');
+
+
+:root {
+    --color-pry-100: hsl(22,65%,57%);
+    --color-pry-200: hsl(0,0%,6%);
+    --color-pry-300: hsl(0,0%,95%);
+    --color-pry-400: hsl(0,0%,98%);
+    --color-pry-500: hsl(0,0%,89%);
+    --color-pry-600: hsl(0,0%,81%);
+    --color-sec-100: hsl(21,94%,75%);
+    --color-sec-200: hsl(0,0%,100%);
+    --color-sec-300: hsl(0,0%,0%);
+    --color-sec-400: hsl(0,0%,10%);
+    --color-sec-500: hsl(0,0%,95%);
+    --color-sec-600: hsl(0,0%,90%);
+    --color-sec-700: hsl(0,0%,48%);
+    --font-pry-100: 'Manrope',sans-serif;
+    --font-weight-100: 200;
+    --font-weight-200: 400;
+    --font-weight-300: 500;
+    --font-weight-400: 700;
+    --max-container: 69.375rem;
+    --center-container: 0 auto;
+    --border-radius: 0.5rem;
+    --transition: all 0.5s;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', 'sans-serif';
+}
+p {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    font-weight: var(--font-weight-100);
+    letter-spacing: 0.05rem;
+}
+a {
+    line-height: 1.5625rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: var(--font-weight-400);
+    letter-spacing: 0.080625rem;
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    letter-spacing: 0.125rem;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    letter-spacing: 0.1rem;
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

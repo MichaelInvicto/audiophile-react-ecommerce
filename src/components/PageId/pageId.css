@@ -1,0 +1,18 @@
+.page-id-section {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    min-height: 14.9375rem;
+    background-color: var(--color-sec-300);
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.page-name {
+    color: var(--color-sec-200);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    text-transform: uppercase;
+}

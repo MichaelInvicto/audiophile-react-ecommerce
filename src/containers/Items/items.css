@@ -1,0 +1,13 @@
+.container {
+    max-width: var(--max-container);
+    display: flex;
+    padding: 0 25px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 9rem auto auto;
+}
+@media only screen and (min-width: 350px) and (max-width: 786px) {
+    .container {
+        flex-direction: column;
+    }
+}

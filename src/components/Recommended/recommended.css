@@ -1,0 +1,103 @@
+.recommended-section {
+    margin: 7rem 0rem;
+    padding: 0rem 2rem;
+    max-width: 100%;
+}
+.recommended-products-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 10rem;
+    max-width: var(--max-container);
+    margin: var(--center-container);
+}
+.may-like {
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+.may-like h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+.recommended-product {
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+.recommended-product-image-container {
+    position: relative;
+    object-fit: cover;
+    min-height: 19.875rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+.recommended-product-image {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.recommended-product-image img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: medium none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+.recommended-product-name {
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.recommended-product-link {
+    text-align: center;
+}
+.recommended-product-link a {
+    cursor: pointer;
+    background-color: var(--color-pry-100);
+    color: var(--color-sec-200);
+    min-height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+.recommended-product-link a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-pry-100);
+    color: var(--color-pry-100);
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .recommended-products-container{
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

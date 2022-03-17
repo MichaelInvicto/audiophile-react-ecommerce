@@ -1,0 +1,78 @@
+.yx1-section {
+    padding: 1rem 2rem;
+    max-width: 100%;
+}
+.yx1-container {
+    gap: 2rem;
+    flex-direction: row;
+    max-width: var(--max-container);
+    margin: var(--center-container);
+    display: flex;
+}
+.yx1-image {
+    min-height: 20rem;
+    border-radius: var(--border-radius);
+    background-image: url("../../assets/home/desktop/image-earphones-yx1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 0%;
+}
+.yx1-text-container {
+    margin-top: 0rem;
+    min-height: 20rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    background-color: var(--color-pry-500);
+    flex: 1 1 0%;
+}
+.yx1-text {
+    margin-left: 5.875rem !important;
+    margin: 0rem 1.5rem;
+}
+.yx1-text h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.yx1-link a {
+    cursor: pointer;
+    min-height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    transition: var(--transition);
+    background-color: transparent;
+    border: 0.1rem solid var(--color-sec-300);
+    color: var(--color-sec-300);
+}
+.yx1-link a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1050px)  {
+    .yx1-image {
+        background-image: url("../../assets/home/tablet/image-earphones-yx1.jpg");
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 669px) {
+    .yx1-container {
+        flex-direction: column;
+    }
+    .yx1-image {
+        background-image: url("../../assets/home/mobile/image-earphones-yx1.jpg");
+    }
+    .yx1-text {
+        /* margin: 0rem 1.5rem !important; */
+        margin: auto !important;
+    }
+}
